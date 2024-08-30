@@ -1,6 +1,6 @@
 USTH ICT Android Development 2024
 ========================================
 
-* **Your ID**
-* **Your name**
-* **Your class**
+* 22BI13325
+* Nguyễn Thành Nam
+* Class 1
