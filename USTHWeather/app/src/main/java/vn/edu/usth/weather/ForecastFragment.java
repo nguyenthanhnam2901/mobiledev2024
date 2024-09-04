@@ -60,19 +60,19 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // View v = inflater.inflate(R.layout.fragment_forecast, container, false);
-//        LinearLayout ll = new LinearLayout(getContext());
-//        ll.setOrientation(LinearLayout.VERTICAL);
-//        ll.setBackgroundColor(0x20FF00FF);
-//
-//        TextView tv = new TextView(getContext());
-//        tv.setText("Thursday");
-//
-//        ImageView iv = new ImageView(getContext());
-//        iv.setImageResource(R.drawable.icerain);
-//
-//        ll.addView(tv);
-//        ll.addView(iv);
+        View v = inflater.inflate(R.layout.fragment_forecast, container, false);
+        LinearLayout ll = new LinearLayout(getContext());
+        ll.setOrientation(LinearLayout.VERTICAL);
+        ll.setBackgroundColor(0x20FF00FF);
+
+        TextView tv = new TextView(getContext());
+        tv.setText("Thursday");
+
+        ImageView iv = new ImageView(getContext());
+        iv.setImageResource(R.drawable.icerain);
+
+        ll.addView(tv);
+        ll.addView(iv);
 
         return ll;
     }
