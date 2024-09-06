@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFD6F2D5">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="#FF000000"
+            android:textSize="20sp"
+            android:text="12C\nCloudy" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/status"
+            android:layout_toLeftOf="@+id/location"
+
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+
+            android:src="@drawable/cloudy" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:layout_alignParentRight="true"
+
+            android:textColor="#FF000000"
+            android:textSize="18sp"
+            android:text="Paris" />
+
+    </RelativeLayout>
+</FrameLayout>
