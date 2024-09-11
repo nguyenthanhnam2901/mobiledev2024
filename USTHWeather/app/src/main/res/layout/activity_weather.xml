@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity">
 
-    <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/container2"
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent" >
 
         <fragment
-            android:id="@+id/first"
-            android:name="vn.edu.usth.weather.WeatherFragment"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.3" />
+            android:layout_height="match_parent"
+            android:name="vn.edu.usth.weather.WeatherAndForecastFragment" />
 
         <fragment
-            android:id="@+id/second"
-            android:name="vn.edu.usth.weather.ForecastFragment"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.7" />
+            android:layout_height="match_parent"
+            android:name="vn.edu.usth.weather.WeatherAndForecastFragment" />
 
-    </LinearLayout>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="vn.edu.usth.weather.WeatherAndForecastFragment" />
+
+    </androidx.viewpager.widget.ViewPager>
+</FrameLayout>

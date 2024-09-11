@@ -9,14 +9,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFD6F2D5">
+        android:background="#FFD6F2D5"
+        tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:textColor="#FF000000"
             android:textSize="20sp"
             android:text="12C\nCloudy" >
@@ -27,8 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_toRightOf="@+id/status"
-            android:layout_toLeftOf="@+id/location"
+            android:layout_toEndOf="@+id/status"
+            android:layout_toStartOf="@+id/location"
 
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"
@@ -41,7 +42,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
 
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
 
             android:textColor="#FF000000"
             android:textSize="18sp"
