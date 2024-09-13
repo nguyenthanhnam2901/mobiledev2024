@@ -4,65 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WeatherFragment">
+    tools:context=".WeatherFragment"
+    android:background="@color/light_green" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/light_green"
-        tools:ignore="UselessParent">
-
-        <TextView
-            android:id="@+id/degree"
+        <View
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:text="12C" >
-        </TextView>
+            android:background="@drawable/frame_transparency"/>
 
-        <TextView
-            android:id="@+id/status"
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/degree"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:text="@string/cloudy" >
-        </TextView>
+            android:layout_margin="40dp">
 
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+                <TextView
+                    android:id="@+id/degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="12C" >
+                </TextView>
 
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/status"
-            android:layout_toStartOf="@+id/location"
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/degree"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="@string/cloudy" >
+                </TextView>
 
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
-            android:src="@drawable/cloudy" />
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/status"
+                    android:layout_toStartOf="@+id/location"
 
-        <TextView
-            android:id="@+id/location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
 
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
+                    android:src="@drawable/cloudy" />
 
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:text="@string/paris" />
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
 
-    </RelativeLayout>
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="@string/paris" />
+
+        </RelativeLayout>
+
 </FrameLayout>
