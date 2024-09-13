@@ -7,13 +7,13 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFFFF"
+    android:background="@color/white"
     tools:ignore="UselessParent">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="10dp">
 
@@ -23,7 +23,7 @@
             android:layout_weight="0.2"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="#FFDFDFFF"
+            android:background="@color/light_purple"
             tools:ignore="NestedWeights" >
 
             <TextView
@@ -34,7 +34,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
 
-                android:textColor="#FF000000"
+                android:textColor="@color/black"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -43,7 +43,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Mon" />
+                android:text="@string/thu_2" />
 
             <TextView
                 android:id="@+id/line_2_day"
@@ -53,7 +53,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
 
-                android:textColor="#FF000000"
+                android:textColor="@color/black"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -62,7 +62,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Tue" />
+                android:text="@string/thu_3" />
 
             <TextView
                 android:id="@+id/line_3_day"
@@ -72,7 +72,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
 
-                android:textColor="#FF000000"
+                android:textColor="@color/black"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -81,7 +81,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Wed" />
+                android:text="@string/thu_4" />
 
             <TextView
                 android:id="@+id/line_4_day"
@@ -91,7 +91,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
 
-                android:textColor="#FF000000"
+                android:textColor="@color/black"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -100,7 +100,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Thu" />
+                android:text="@string/thu_5" />
 
             <TextView
                 android:id="@+id/line_5_day"
@@ -110,7 +110,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
 
-                android:textColor="#FF000000"
+                android:textColor="@color/black"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -119,7 +119,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Fri" />
+                android:text="@string/thu_6" />
 
             <TextView
                 android:id="@+id/line_6_day"
@@ -129,7 +129,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
 
-                android:textColor="#FF000000"
+                android:textColor="@color/black"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -138,7 +138,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Sat" />
+                android:text="@string/thu_7" />
 
             <TextView
                 android:id="@+id/line_7_day"
@@ -148,7 +148,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
 
-                android:textColor="#FF000000"
+                android:textColor="@color/black"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -157,7 +157,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Sun" />
+                android:text="@string/chu_nhat" />
 
             <TextView
                 android:id="@+id/line_8_day"
@@ -167,7 +167,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
 
-                android:textColor="#FF000000"
+                android:textColor="@color/black"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -176,7 +176,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Mon" />
+                android:text="@string/thu_2" />
 
             <TextView
                 android:id="@+id/line_9_day"
@@ -186,7 +186,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
 
-                android:textColor="#FF000000"
+                android:textColor="@color/black"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -195,7 +195,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Tue" />
+                android:text="@string/thu_3" />
 
             <TextView
                 android:id="@+id/line_10_day"
@@ -205,7 +205,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
 
-                android:textColor="#FF000000"
+                android:textColor="@color/black"
 
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -214,7 +214,7 @@
 
                 android:textSize="20sp"
 
-                android:text="Wed" />
+                android:text="@string/thu_4" />
 
         </LinearLayout>
 
@@ -225,7 +225,8 @@
             android:layout_weight="0.3"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="#FFDFDFFF"
+            android:background="@color/light_purple"
+
             tools:ignore="NestedWeights">
 
             <ImageView
@@ -347,15 +348,13 @@
             android:layout_weight="0.5"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="#FFDFDFFF">
+            android:background="@color/light_purple">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.1"
-
                 android:orientation="vertical"
-                android:background="#FFDFDFFF"
                 tools:ignore="NestedWeights">
 
                 <TextView
@@ -364,7 +363,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
 
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -372,7 +371,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Sunny" />
+                    android:text="@string/nang_to" />
 
                 <TextView
                     android:id="@+id/line_1_2_description"
@@ -380,7 +379,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5
 "
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -396,9 +395,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.1"
-
                 android:orientation="vertical"
-                android:background="#FFDFDFFF"
                 tools:ignore="NestedWeights">
 
                 <TextView
@@ -407,7 +404,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
 
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -415,7 +412,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Little cloudy" />
+                    android:text="@string/nang_co_may" />
 
                 <TextView
                     android:id="@+id/line_2_2_description"
@@ -423,7 +420,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5
 "
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -439,9 +436,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.1"
-
                 android:orientation="vertical"
-                android:background="#FFDFDFFF"
                 tools:ignore="NestedWeights">
 
                 <TextView
@@ -450,7 +445,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
 
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -458,7 +453,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Mostly cloudy" />
+                    android:text="@string/nang_co_may" />
 
                 <TextView
                     android:id="@+id/line_3_2_description"
@@ -466,7 +461,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5
 "
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -482,9 +477,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.1"
-
                 android:orientation="vertical"
-                android:background="#FFDFDFFF"
                 tools:ignore="NestedWeights">
 
                 <TextView
@@ -493,7 +486,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
 
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -501,7 +494,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Cloudy" />
+                    android:text="@string/co_may" />
 
                 <TextView
                     android:id="@+id/line_4_2_description"
@@ -509,7 +502,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5
 "
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -525,9 +518,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.1"
-
                 android:orientation="vertical"
-                android:background="#FFDFDFFF"
                 tools:ignore="NestedWeights">
 
                 <TextView
@@ -536,7 +527,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
 
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -544,7 +535,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Cloudy" />
+                    android:text="@string/co_may" />
 
                 <TextView
                     android:id="@+id/line_5_2_description"
@@ -552,7 +543,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5
 "
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -568,9 +559,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.1"
-
                 android:orientation="vertical"
-                android:background="#FFDFDFFF"
                 tools:ignore="NestedWeights">
 
                 <TextView
@@ -579,7 +568,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
 
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -587,7 +576,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Cloudy" />
+                    android:text="@string/nhieu_may" />
 
                 <TextView
                     android:id="@+id/line_6_2_description"
@@ -595,7 +584,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5
 "
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -611,9 +600,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.1"
-
                 android:orientation="vertical"
-                android:background="#FFDFDFFF"
                 tools:ignore="NestedWeights">
 
                 <TextView
@@ -622,7 +609,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
 
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -630,7 +617,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Thunderstorms" />
+                    android:text="@string/sam_chop" />
 
                 <TextView
                     android:id="@+id/line_7_2_description"
@@ -638,7 +625,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5
 "
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -654,9 +641,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.1"
-
                 android:orientation="vertical"
-                android:background="#FFDFDFFF"
                 tools:ignore="NestedWeights">
 
                 <TextView
@@ -665,7 +650,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
 
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -673,7 +658,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Rain" />
+                    android:text="@string/mua" />
 
                 <TextView
                     android:id="@+id/line_8_2_description"
@@ -681,7 +666,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5
 "
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -697,9 +682,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.1"
-
                 android:orientation="vertical"
-                android:background="#FFDFDFFF"
                 tools:ignore="NestedWeights">
 
                 <TextView
@@ -708,7 +691,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
 
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -716,7 +699,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Heavy rain" />
+                    android:text="@string/mua_to" />
 
                 <TextView
                     android:id="@+id/line_9_2_description"
@@ -724,7 +707,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5
 "
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -740,9 +723,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.1"
-
                 android:orientation="vertical"
-                android:background="#FFDFDFFF"
                 tools:ignore="NestedWeights">
 
                 <TextView
@@ -751,7 +732,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5"
 
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
@@ -759,7 +740,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="Showers" />
+                    android:text="@string/mua_mau" />
 
                 <TextView
                     android:id="@+id/line_10_2_description"
@@ -767,7 +748,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="0.5
 "
-                    android:textColor="#FF000000"
+                    android:textColor="@color/black"
 
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"

@@ -5,4 +5,43 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="paris">Paris</string>
+    <string name="toulouse">Toulouse</string>
+    <string name="hanoi">Hà Nội</string>
+
+    <string name="cloudy">Cloudy</string>
+
+    <string name="troi_quang">Trời Quang</string>
+
+    <string name="co_may">Có Mây</string>
+    <string name="nhieu_may">Nhiều Mây</string>
+
+    <string name="nang">Nắng</string>
+    <string name="nang_to">Nắng To</string>
+    <string name="nang_co_may">Nắng có mây</string>
+
+    <string name="mua_rao">Mưa rào</string>
+    <string name="mua_mau">Mưa mau</string>
+    <string name="mua">Mưa</string>
+    <string name="mua_to">Mưa_to</string>
+    <string name="mua_rat_to">Mưa rất to</string>
+
+    <string name="troi_lang">Trời Lặng</string>
+    <string name="gio_thoang">Gió Thoảng</string>
+    <string name="nhieu_gio">Nhiều gió</string>
+    <string name="gio_to">Gió to</string>
+
+    <string name="dong_gio">Dông gió</string>
+    <string name="bao">Bão</string>
+
+    <string name="sam_chop">Sấm chớp</string>
+
+    <string name="thu_2">Thứ 2</string>
+    <string name="thu_3">Thứ 3</string>
+    <string name="thu_4">Thứ 4</string>
+    <string name="thu_5">Thứ 5</string>
+    <string name="thu_6">Thứ 6</string>
+    <string name="thu_7">Thứ 7</string>
+    <string name="chu_nhat">Chủ Nhật</string>
 </resources>
