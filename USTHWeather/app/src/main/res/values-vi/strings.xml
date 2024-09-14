@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="paris">Paris</string>
+    <string name="toulouse">Toulouse</string>
+    <string name="hanoi">Hà Nội</string>
+
+    <string name="no_data">Không dữ liệu</string>
+    <string name="hot">Nóng</string>
+    <string name="cold">Lạnh</string>
+
+    <string name="cloud">Mây</string>
+    <string name="cloudy">Nhiều mây</string>
+
+    <string name="clear">Trời quang</string>
+
+    <string name="sun">Nắng</string>
+    <string name="sunny">Nắng to</string>
+
+    <string name="sun_bit_cloudy">Nắng có mây</string>
+    <string name="sun_lot_cloud">Nắng với nhiều mây</string>
+
+    <string name="sun_light_rain">Nắng có mua nhẹ</string>
+    <string name="sun_normal_rain">Nắng có mưa</string>
+
+    <string name="clear_rain">Trời quang có mưa</string>
+
+    <string name="very_light_rain">Mưa rất nhẹ</string>
+    <string name="light_rain">Mưa nhẹ</string>
+    <string name="light_rain_and_thunder">Mưa nhẹ có sấm chớp</string>
+
+    <string name="normal_rain">Mưa</string>
+    <string name="normal_rain_and_thunder">Mưa có sấm chớp</string>
+    <string name="heavy_rain">Mưa to</string>
+
+    <string name="light_snow_rain">Mưa tuyết nhẹ</string>
+    <string name="normal_snow_rain">Mưa tuyết</string>
+
+    <string name="ice_rain">Mưa đá</string>
+    <string name="heavy_snow_rain">Mưa đá to</string>
+    <string name="very_heavy_snow_rain">Mưa đá rất to</string>
+
+    <string name="moon">Trăng</string>
+    <string name="moon_bit_cloud">Trăng có mây</string>
+    <string name="moon_lot_cloud">Trăng có nhiều mây</string>
+
+    <string name="no_wind">Trời lặng không gió</string>
+    <string name="wind">Có gió</string>
+    <string name="windy">Gió to</string>
+
+    <string name="monday">Thứ 2</string>
+    <string name="tuesday">Thứ 3</string>
+    <string name="wednesday">Thứ 4</string>
+    <string name="thursday">Thứ 5</string>
+    <string name="friday">Thứ 6</string>
+    <string name="saturday">Thứ 7</string>
+    <string name="sunday">Chủ nhật</string>
+</resources>

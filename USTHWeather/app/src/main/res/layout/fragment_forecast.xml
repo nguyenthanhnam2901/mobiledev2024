@@ -42,7 +42,7 @@
 
                 android:textSize="20sp"
 
-                android:text="@string/thu_2" />
+                android:text="@string/monday" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -60,7 +60,7 @@
 
                 android:textSize="20sp"
 
-                android:text="@string/thu_3" />
+                android:text="@string/tuesday" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -78,7 +78,7 @@
 
                 android:textSize="20sp"
 
-                android:text="@string/thu_4" />
+                android:text="@string/wednesday" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -96,7 +96,7 @@
 
                 android:textSize="20sp"
 
-                android:text="@string/thu_5" />
+                android:text="@string/thursday" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -114,7 +114,7 @@
 
                 android:textSize="20sp"
 
-                android:text="@string/thu_6" />
+                android:text="@string/friday" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -132,7 +132,7 @@
 
                 android:textSize="20sp"
 
-                android:text="@string/thu_7" />
+                android:text="@string/saturday" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -150,7 +150,7 @@
 
                 android:textSize="20sp"
 
-                android:text="@string/chu_nhat" />
+                android:text="@string/sunday" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -168,7 +168,7 @@
 
                 android:textSize="20sp"
 
-                android:text="@string/thu_2" />
+                android:text="@string/monday" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -186,7 +186,7 @@
 
                 android:textSize="20sp"
 
-                android:text="@string/thu_3" />
+                android:text="@string/tuesday" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -204,7 +204,7 @@
 
                 android:textSize="20sp"
 
-                android:text="@string/thu_4" />
+                android:text="@string/wednesday" />
 
         </LinearLayout>
 
@@ -350,7 +350,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="@string/nang_to" />
+                    android:text="@string/sunny" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -389,7 +389,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="@string/nang_co_may" />
+                    android:text="@string/sun_bit_cloudy" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -428,7 +428,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="@string/nang_co_may" />
+                    android:text="@string/sun_bit_cloudy" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -467,7 +467,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="@string/co_may" />
+                    android:text="@string/cloud" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -506,7 +506,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="@string/co_may" />
+                    android:text="@string/cloud" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -545,7 +545,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="@string/nhieu_may" />
+                    android:text="@string/cloudy" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -584,7 +584,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="@string/sam_chop" />
+                    android:text="@string/light_rain_and_thunder" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -623,7 +623,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="@string/mua" />
+                    android:text="@string/normal_rain" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -662,7 +662,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="@string/mua_to" />
+                    android:text="@string/heavy_rain" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -701,7 +701,7 @@
 
                     android:textSize="18sp"
 
-                    android:text="@string/mua_mau" />
+                    android:text="@string/light_rain" />
 
                 <TextView
                     android:layout_width="match_parent"
