@@ -75,6 +75,7 @@ public class WeatherActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_refresh) {
+            Toast.makeText(this, "Refreshing...", Toast.LENGTH_SHORT).show();
             new SimulateNetworkRequestTask().execute();
             return true;
         } else if (id == R.id.action_settings) {
@@ -90,7 +91,6 @@ public class WeatherActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
             try {
-                // Simulate network delay
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
