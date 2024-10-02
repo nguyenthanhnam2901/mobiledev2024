@@ -1,26 +1,16 @@
 package vn.edu.usth.weather;
 
 import android.content.Intent;
-import android.icu.util.Output;
 import android.media.MediaPlayer;
-import android.os.Bundle;
-import android.os.Handler;
 import android.os.AsyncTask;
-import android.os.Looper;
-import android.os.Message;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
@@ -28,21 +18,19 @@ import com.google.android.material.tabs.TabLayout;
 public class WeatherActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
-    private Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        ViewPager pager = findViewById(R.id.pager);
         HomeFragmentPagerAdapter adapter = new HomeFragmentPagerAdapter(getSupportFragmentManager());
         pager.setOffscreenPageLimit(3);
         pager.setAdapter(adapter);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
+        TabLayout tabLayout = findViewById(R.id.tab);
         tabLayout.setupWithViewPager(pager);
-
 
         mediaPlayer = MediaPlayer.create(this, R.raw.a_test);
         if (mediaPlayer != null) {
@@ -54,15 +42,10 @@ public class WeatherActivity extends AppCompatActivity {
             });
         }
 
-
-//        if (getSupportActionBar() != null) {
-//            getSupportActionBar().setTitle(R.string.app_name);
-//        }
-
-//        ForecastFragment firstFragment = new ForecastFragment();
-//        getFragmentManager().beginTransaction().add(
-//            R.id.main, firstFragment).commit();
-//        Log.i("Weather", "onCreate()");
+        // if (getSupportActionBar() != null) {
+        //     getSupportActionBar().setTitle(R.string.app_name);
+        // }
+        // Log.i("Weather", "onCreate()");
     }
 
     @Override
@@ -78,38 +61,7 @@ public class WeatherActivity extends AppCompatActivity {
 
         if (id == R.id.action_refresh) {
             Toast.makeText(this, "Refreshing...", Toast.LENGTH_SHORT).show();
-
-            final Handler handler = new Handler(Looper.getMainLooper()) {
-                @Override
-                public void handleMessage(Message msg) {
-                    // This method is executed in main thread
-                    String content = msg.getData().getString("server_response");
-                    Toast.makeText(WeatherActivity.this, content, Toast.LENGTH_SHORT).show();
-                }
-            };
-
-            Thread t = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    // this method is run in a worker thread
-                    try {
-                        // wait for 5 seconds to simulate a long network access
-                        Thread.sleep(5000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-
-                    // Assume that we got our data from server
-                    Bundle bundle = new Bundle();
-                    bundle.putString("server_response", "Weather data refreshed!");
-
-                    // notify main thread
-                    Message msg = new Message();
-                    msg.setData(bundle);
-                    handler.sendMessage(msg);
-                }
-            });
-            t.start();
+            new RefreshWeatherTask().execute();
             return true;
 
         } else if (id == R.id.action_settings) {
@@ -121,6 +73,32 @@ public class WeatherActivity extends AppCompatActivity {
         }
     }
 
+
+    private class RefreshWeatherTask extends AsyncTask<Void, Void, String> {
+
+        @Override
+        protected void onPreExecute() {
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            return "Weather data refreshed!";
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+            Toast.makeText(WeatherActivity.this, result, Toast.LENGTH_SHORT).show();
+        }
+    }
 
     @Override
     protected void onStart() {

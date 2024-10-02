@@ -10,716 +10,727 @@
     android:background="@color/white"
     tools:ignore="UselessParent">
 
-
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp">
-
+        android:layout_height="wrap_content" >
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.2"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@color/light_purple"
-            tools:ignore="NestedWeights" >
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
 
-                android:textColor="@color/black"
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/light_purple"
+                tools:ignore="NestedWeights" >
 
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
 
-                android:textSize="20sp"
+                    android:textColor="@color/black"
 
-                android:text="@string/monday" />
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
+                    android:textSize="20sp"
 
-                android:textColor="@color/black"
+                    android:text="@string/monday" />
 
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
 
-                android:textSize="20sp"
+                    android:textColor="@color/black"
 
-                android:text="@string/tuesday" />
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
+                    android:textSize="20sp"
 
-                android:textColor="@color/black"
+                    android:text="@string/tuesday" />
 
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
 
-                android:textSize="20sp"
+                    android:textColor="@color/black"
 
-                android:text="@string/wednesday" />
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
+                    android:textSize="20sp"
 
-                android:textColor="@color/black"
+                    android:text="@string/wednesday" />
 
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
 
-                android:textSize="20sp"
+                    android:textColor="@color/black"
 
-                android:text="@string/thursday" />
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
+                    android:textSize="20sp"
 
-                android:textColor="@color/black"
+                    android:text="@string/thursday" />
 
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
 
-                android:textSize="20sp"
+                    android:textColor="@color/black"
 
-                android:text="@string/friday" />
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
+                    android:textSize="20sp"
 
-                android:textColor="@color/black"
+                    android:text="@string/friday" />
 
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
 
-                android:textSize="20sp"
+                    android:textColor="@color/black"
 
-                android:text="@string/saturday" />
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
+                    android:textSize="20sp"
 
-                android:textColor="@color/black"
+                    android:text="@string/saturday" />
 
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
 
-                android:textSize="20sp"
+                    android:textColor="@color/black"
 
-                android:text="@string/sunday" />
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
+                    android:textSize="20sp"
 
-                android:textColor="@color/black"
+                    android:text="@string/sunday" />
 
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
 
-                android:textSize="20sp"
+                    android:textColor="@color/black"
 
-                android:text="@string/monday" />
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
+                    android:textSize="20sp"
 
-                android:textColor="@color/black"
+                    android:text="@string/monday" />
 
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
 
-                android:textSize="20sp"
+                    android:textColor="@color/black"
 
-                android:text="@string/tuesday" />
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
+                    android:textSize="20sp"
 
-                android:textColor="@color/black"
+                    android:text="@string/tuesday" />
 
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
 
-                android:textSize="20sp"
+                    android:textColor="@color/black"
 
-                android:text="@string/wednesday" />
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
 
+                    android:textSize="20sp"
+
+                    android:text="@string/wednesday" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/light_purple"
+
+                tools:ignore="NestedWeights">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/sunny" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/sunlotcloud" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/sunlotcloud" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/cloud" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/cloud" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/cloudy" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/lightrainandthunder" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/lightrain" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/heavyrain" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:scaleType="fitCenter"
+
+                    android:adjustViewBounds="true"
+
+                    android:src="@drawable/clearrain" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/light_purple">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="@string/sunny" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5
+"
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="31C - 38C" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="@string/sun_bit_cloudy" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5
+"
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="29C - 36C" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="@string/sun_bit_cloudy" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5
+"
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="28C - 35C" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="@string/cloud" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5
+"
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="28C - 35C" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="@string/cloud" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5
+"
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="28C - 34C" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="@string/cloudy" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5
+"
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="26C - 30C" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="@string/light_rain_and_thunder" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5
+"
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="20C - 26C" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="@string/normal_rain" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5
+"
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="20C - 26C" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="@string/heavy_rain" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5
+"
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="16C - 24C" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="@string/light_rain" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5
+"
+                        android:textColor="@color/black"
+
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textSize="18sp"
+
+                        android:text="16C - 20C" />
+
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
+    </FrameLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.3"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@color/light_purple"
-
-            tools:ignore="NestedWeights">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:scaleType="fitCenter"
-
-                android:adjustViewBounds="true"
-
-                android:src="@drawable/sunny" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:scaleType="fitCenter"
-
-                android:adjustViewBounds="true"
-
-                android:src="@drawable/sunlotcloud" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:scaleType="fitCenter"
-
-                android:adjustViewBounds="true"
-
-                android:src="@drawable/sunlotcloud" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:scaleType="fitCenter"
-
-                android:adjustViewBounds="true"
-
-                android:src="@drawable/cloud" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:scaleType="fitCenter"
-
-                android:adjustViewBounds="true"
-
-                android:src="@drawable/cloud" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:scaleType="fitCenter"
-
-                android:adjustViewBounds="true"
-
-                android:src="@drawable/cloudy" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:scaleType="fitCenter"
-
-                android:adjustViewBounds="true"
-
-                android:src="@drawable/lightrainandthunder" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:scaleType="fitCenter"
-
-                android:adjustViewBounds="true"
-
-                android:src="@drawable/lightrain" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:scaleType="fitCenter"
-
-                android:adjustViewBounds="true"
-
-                android:src="@drawable/heavyrain" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:scaleType="fitCenter"
-
-                android:adjustViewBounds="true"
-
-                android:src="@drawable/clearrain" />
-
-        </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@color/light_purple">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="@string/sunny" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5
-"
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="31C - 38C" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="@string/sun_bit_cloudy" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5
-"
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="29C - 36C" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="@string/sun_bit_cloudy" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5
-"
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="28C - 35C" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="@string/cloud" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5
-"
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="28C - 35C" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="@string/cloud" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5
-"
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="28C - 34C" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="@string/cloudy" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5
-"
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="26C - 30C" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="@string/light_rain_and_thunder" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5
-"
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="20C - 26C" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="@string/normal_rain" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5
-"
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="20C - 26C" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="@string/heavy_rain" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5
-"
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="16C - 24C" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.1"
-                android:orientation="vertical"
-                tools:ignore="NestedWeights">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="@string/light_rain" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5
-"
-                    android:textColor="@color/black"
-
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingTop="5dp"
-
-                    android:textSize="18sp"
-
-                    android:text="16C - 20C" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-    </LinearLayout>
 </ScrollView>
