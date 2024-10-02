@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.icu.util.Output;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.AsyncTask;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -20,8 +22,6 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
-
-import android.os.Handler;
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -53,8 +53,6 @@ public class WeatherActivity extends AppCompatActivity {
         }
 
 
-
-
 //        if (getSupportActionBar() != null) {
 //            getSupportActionBar().setTitle(R.string.app_name);
 //        }
@@ -64,7 +62,6 @@ public class WeatherActivity extends AppCompatActivity {
 //            R.id.main, firstFragment).commit();
 //        Log.i("Weather", "onCreate()");
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -78,7 +75,7 @@ public class WeatherActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_refresh) {
-            simulateNetworkRequest();
+            new SimulateNetworkRequestTask().execute();
             return true;
         } else if (id == R.id.action_settings) {
             Intent intent = new Intent(this, PrefActivity.class);
@@ -89,22 +86,22 @@ public class WeatherActivity extends AppCompatActivity {
         }
     }
 
-    private void simulateNetworkRequest() {
-        // Create a new thread for simulating the network request
-        new Thread(() -> {
+    private class SimulateNetworkRequestTask extends AsyncTask<Void, Void, String> {
+        @Override
+        protected String doInBackground(Void... voids) {
             try {
                 // Simulate network delay
-                Thread.sleep(3000); // Simulates a 3-second network delay
-
-                // Update the UI using the Handler
-                handler.post(() -> {
-                    // Show a toast message on completion
-                    Toast.makeText(WeatherActivity.this, "Weather data refreshed!", Toast.LENGTH_SHORT).show();
-                });
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }).start();
+            return "Weather data refreshed!";
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            Toast.makeText(WeatherActivity.this, result, Toast.LENGTH_SHORT).show();
+        }
     }
 
 
