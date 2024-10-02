@@ -1,13 +1,19 @@
 package vn.edu.usth.weather;
 
+import android.content.Intent;
 import android.icu.util.Output;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -38,7 +44,7 @@ public class WeatherActivity extends AppCompatActivity {
         mediaPlayer = MediaPlayer.create(this, R.raw.a_test);
         if (mediaPlayer != null) {
             mediaPlayer.start();
-            
+
             mediaPlayer.setOnCompletionListener(mp -> {
                 mp.release();
                 mediaPlayer = null;
@@ -46,11 +52,43 @@ public class WeatherActivity extends AppCompatActivity {
         }
 
 
+
+
+//        if (getSupportActionBar() != null) {
+//            getSupportActionBar().setTitle(R.string.app_name);
+//        }
+
 //        ForecastFragment firstFragment = new ForecastFragment();
 //        getFragmentManager().beginTransaction().add(
 //            R.id.main, firstFragment).commit();
 //        Log.i("Weather", "onCreate()");
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_weather, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_refresh) {
+            Toast.makeText(this, "Refreshing weather...", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, PrefActivity.class);
+            startActivity(intent);
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
+        }
+    }
+
+
 
     @Override
     protected void onStart() {
