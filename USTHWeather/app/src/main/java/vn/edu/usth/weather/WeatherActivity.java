@@ -21,11 +21,12 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
-import java.io.InputStream;
+import android.os.Handler;
 
 public class WeatherActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
+    private Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +78,7 @@ public class WeatherActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_refresh) {
-            Toast.makeText(this, "Refreshing weather...", Toast.LENGTH_SHORT).show();
+            simulateNetworkRequest();
             return true;
         } else if (id == R.id.action_settings) {
             Intent intent = new Intent(this, PrefActivity.class);
@@ -88,6 +89,23 @@ public class WeatherActivity extends AppCompatActivity {
         }
     }
 
+    private void simulateNetworkRequest() {
+        // Create a new thread for simulating the network request
+        new Thread(() -> {
+            try {
+                // Simulate network delay
+                Thread.sleep(3000); // Simulates a 3-second network delay
+
+                // Update the UI using the Handler
+                handler.post(() -> {
+                    // Show a toast message on completion
+                    Toast.makeText(WeatherActivity.this, "Weather data refreshed!", Toast.LENGTH_SHORT).show();
+                });
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
+    }
 
 
     @Override
