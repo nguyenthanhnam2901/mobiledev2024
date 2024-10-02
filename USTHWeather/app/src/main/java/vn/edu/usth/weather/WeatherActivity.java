@@ -1,6 +1,8 @@
 package vn.edu.usth.weather;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -10,10 +12,15 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
+
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -35,17 +42,13 @@ public class WeatherActivity extends AppCompatActivity {
         mediaPlayer = MediaPlayer.create(this, R.raw.a_test);
         if (mediaPlayer != null) {
             mediaPlayer.start();
-
             mediaPlayer.setOnCompletionListener(mp -> {
                 mp.release();
                 mediaPlayer = null;
             });
         }
 
-        // if (getSupportActionBar() != null) {
-        //     getSupportActionBar().setTitle(R.string.app_name);
-        // }
-        // Log.i("Weather", "onCreate()");
+        new DownloadLogoTask().execute("https://usth.edu.vn/wp-content/uploads/2021/11/logo.png");
     }
 
     @Override
@@ -60,10 +63,9 @@ public class WeatherActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_refresh) {
-            Toast.makeText(this, "Refreshing...", Toast.LENGTH_SHORT).show();
-            new RefreshWeatherTask().execute();
+            showToast("Refreshing...");
+            new DownloadLogoTask().execute("https://usth.edu.vn/wp-content/uploads/2021/11/logo.png");
             return true;
-
         } else if (id == R.id.action_settings) {
             Intent intent = new Intent(this, PrefActivity.class);
             startActivity(intent);
@@ -73,30 +75,51 @@ public class WeatherActivity extends AppCompatActivity {
         }
     }
 
+    private void showToast(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
 
-    private class RefreshWeatherTask extends AsyncTask<Void, Integer, String> {
+    private void showAlertDialog(String title, String message) {
+        new AlertDialog.Builder(this)
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton(android.R.string.ok, null)
+                .show();
+    }
 
+    private class DownloadLogoTask extends AsyncTask<String, Void, Bitmap> {
         @Override
-        protected void onPreExecute() {
-        }
-
-        @Override
-        protected String doInBackground(Void... params) {
+        protected Bitmap doInBackground(String... urls) {
+            Bitmap logoBitmap = null;
             try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+                URL url = new URL(urls[0]);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setRequestMethod("GET");
+                connection.setDoInput(true);
+                connection.connect();
+
+                int response = connection.getResponseCode();
+                Log.i("USTHWeather", "The response is: " + response);
+                if (response == HttpURLConnection.HTTP_OK) {
+                    InputStream is = connection.getInputStream();
+                    logoBitmap = BitmapFactory.decodeStream(is);
+                }
+                connection.disconnect();
+            } catch (Exception e) {
+                Log.e("USTHWeather", "Error downloading logo", e);
             }
-            return "Weather data refreshed!";
+            return logoBitmap;
         }
 
         @Override
-        protected void onProgressUpdate(Integer... values) {
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-            Toast.makeText(WeatherActivity.this, result, Toast.LENGTH_SHORT).show();
+        protected void onPostExecute(Bitmap logoBitmap) {
+            if (logoBitmap != null) {
+                ForecastFragment.updateLogo(logoBitmap);
+                showToast("Logo downloaded successfully!");
+            } else {
+                Log.e("USTHWeather", "Failed to download logo.");
+                showAlertDialog("Error", "Failed to download logo. Please try again.");
+            }
         }
     }
 
