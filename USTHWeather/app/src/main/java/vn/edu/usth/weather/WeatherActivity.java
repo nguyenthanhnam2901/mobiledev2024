@@ -1,5 +1,7 @@
 package vn.edu.usth.weather;
 
+import android.icu.util.Output;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,7 +15,11 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
+import java.io.InputStream;
+
 public class WeatherActivity extends AppCompatActivity {
+
+    private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +33,17 @@ public class WeatherActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
         tabLayout.setupWithViewPager(pager);
+
+
+        mediaPlayer = MediaPlayer.create(this, R.raw.a_test);
+        if (mediaPlayer != null) {
+            mediaPlayer.start();
+            
+            mediaPlayer.setOnCompletionListener(mp -> {
+                mp.release();
+                mediaPlayer = null;
+            });
+        }
 
 
 //        ForecastFragment firstFragment = new ForecastFragment();
