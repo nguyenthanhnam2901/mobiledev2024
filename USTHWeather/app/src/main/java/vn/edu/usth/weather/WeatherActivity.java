@@ -74,28 +74,28 @@ public class WeatherActivity extends AppCompatActivity {
     }
 
 
-    private class RefreshWeatherTask extends AsyncTask<Void, Void, String> {
+    private class RefreshWeatherTask extends AsyncTask<Void, Integer, String> {
 
         @Override
         protected void onPreExecute() {
-
         }
 
         @Override
-        protected String doInBackground(Void... voids) {
-
+        protected String doInBackground(Void... params) {
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
             return "Weather data refreshed!";
         }
 
         @Override
-        protected void onPostExecute(String result) {
+        protected void onProgressUpdate(Integer... values) {
+        }
 
+        @Override
+        protected void onPostExecute(String result) {
             Toast.makeText(WeatherActivity.this, result, Toast.LENGTH_SHORT).show();
         }
     }
