@@ -12,39 +12,27 @@
         android:layout_height="wrap_content" />
 
     <!-- TODO: Update blank fragment layout -->
-    <FrameLayout
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/pager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <fragment
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:name="vn.edu.usth.weather.WeatherAndForecastFragment" />
-
-            <fragment
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:name="vn.edu.usth.weather.WeatherAndForecastFragment" />
-
-            <fragment
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:name="vn.edu.usth.weather.WeatherAndForecastFragment" />
-
-        </androidx.viewpager.widget.ViewPager>
-
-        <ImageView
-            android:id="@+id/logo"
+        <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/cloudy"
-            android:alpha=".50"/>
+            android:name="vn.edu.usth.weather.WeatherAndForecastFragment" />
 
-    </FrameLayout>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="vn.edu.usth.weather.WeatherAndForecastFragment" />
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="vn.edu.usth.weather.WeatherAndForecastFragment" />
+
+    </androidx.viewpager.widget.ViewPager>
 
 </LinearLayout>

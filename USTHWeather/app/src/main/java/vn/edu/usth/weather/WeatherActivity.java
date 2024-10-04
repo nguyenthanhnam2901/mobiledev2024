@@ -10,7 +10,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -26,7 +25,6 @@ import java.net.URL;
 public class WeatherActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
-    private static ImageView logo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +47,6 @@ public class WeatherActivity extends AppCompatActivity {
                 mediaPlayer = null;
             });
         }
-
-
-        logo = findViewById(R.id.logo);
 
         new DownloadLogoTask().execute("https://usth.edu.vn/wp-content/uploads/2021/11/logo.png");
     }
@@ -119,13 +114,11 @@ public class WeatherActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Bitmap logoBitmap) {
             if (logoBitmap != null) {
-                if (logo != null) {
-                    logo.setImageBitmap(logoBitmap);
-                    showToast("Logo downloaded successfully!");
-                } else {
-                    Log.e("USTHWeather", "Failed to download logo.");
-                    showAlertDialog("Error", "Failed to download logo. Please try again.");
-                }
+                ForecastFragment.updateLogo(logoBitmap);
+                showToast("Logo downloaded successfully!");
+            } else {
+                Log.e("USTHWeather", "Failed to download logo.");
+                showAlertDialog("Error", "Failed to download logo. Please try again.");
             }
         }
     }
